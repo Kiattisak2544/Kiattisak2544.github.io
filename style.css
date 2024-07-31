@@ -1,0 +1,103 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1rem;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-link {
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    /* text-shadow: #444444 1px 1px 5px; */
+    color: #949494 !important;
+}
+
+.nav-link:hover {
+    color: #444445 !important;
+    font-size: 18px;
+    font-weight: 1000;
+    transition: all 0.5s;
+    text-shadow: #44444469 1px 1px 5px;
+}
+
+.heading {
+    font-size: 36px !important;
+    font-weight: 400 !important;
+    letter-spacing: 3px;
+}
+
+.text-content {
+    text-indent: 1em;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+.text-icon{
+    color: #090909!important;
+}
+.icon-image{
+    width: 1.6em!important;
+    height: 1.6em!important;
+}
+.socai-text{
+    font-family: 'Roboto', sans-serif!important;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    
+}
+
+/* Responsive  */
+@media (max-width:990px) {
+    .heading {
+        font-size: 25px !important;
+        letter-spacing: 1.8px;
+        padding: 0 !important;
+
+    }
+
+    .text-content {
+        text-indent: 1em;
+        letter-spacing: 0;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:780px) {
+    .heading {
+        font-size: 18px !important;
+        font-weight: 1000 !important;
+    }
+
+    .text-content {
+        text-indent: 0;
+        letter-spacing: 0;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media (max-width:550px) {
+    .heading {
+        font-size: 18px !important;
+        font-weight: 1000 !important;
+    }
+
+    .text-content {
+        text-indent: 0;
+        letter-spacing: 0.5px;
+        font-size: 16px;
+    }
+}
