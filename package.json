@@ -1,15 +1,15 @@
 {
-  "name": "web",
+  "name": "web-main",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "\"Portfolio\"",
+  "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aos": "^2.3.4",
-    "bootstrap": "^5.3.1"
+    "bootstrap": "^5.3.3"
   }
 }

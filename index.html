@@ -16,13 +16,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="script.js"></script>
 
 </head>
 
 <body class="bg-effect">
     <section class="container-fluid ">
         <div class="container mb-0">
-            <nav class="navbar navbar-expand-lg bg-body shadow-sm p-3 mb-2 bg-body rounded  ">
+            <nav class="navbar navbar-expand-lg bg-body shadow-sm p-3 mb-2 bg-body rounded  " id="navbar">
                 <div class="container-fluid">
                     <a class="navbar-brand logo" href="#">Portfolio</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -58,8 +60,7 @@
                 <div class="row align-items-center">
                     <div class="col-12 col-md-5 col-lg-5 order-md-2">
                         <img class="img-fluid mw-50 mw-md-75 mw-lg-100 mb-6 mb-md-0  " alt=""
-                            src="image/developer_male.jpg"
-                            alt="...">
+                            src="image/developer_male.jpg" alt="...">
                     </div>
                     <div class="col-12 col-md-7 col-lg-6 order-md-1 aos-init" data-aos="fade-right">
                         <!-- header -->
@@ -84,57 +85,174 @@
         <!-- Hero end -->
     </section>
     <!-- End Section -->
-    <div class="container mt-4 mt-md-0 mb-md-3" id="Profile">
+    <div class="container-fluid mt-4 mt-md-0 mb-md-3 shadow-sm p-3 mb-5 bg-white rounded" id="Profile">
         <div class="row">
             <div class="col-12 col-md-5 col-lg-6 order-md-1 mt-2">
-                <img src="image/Profile.jpg" data-aos="fade-right" data-aos-delay="500"
-                    class="aos-init shadow-sm p-1 mb-5 bg-white rounded img-thumbnail w-50 mx-auto d-block mw-md-75 mw-lg-100 mb-6 mb-md-0 aos-init aos-animate rounded-circle"
+                <img src="image/Profile.jpg.png" data-aos="fade-right" data-aos-delay="500"
+                    class="aos-init shadow-sm p-1 mb-5 bg-white rounded img-thumbnail w-50 mx-auto d-block mw-md-75 mw-lg-75 mb-6 mb-md-0 aos-init aos-animate rounded-circle"
                     alt="">
             </div>
-            <div class="col-12  col-md-6 order-md-2 my-auto ">
+            <div class="col-12  col-md-6 order-md-2 my-auto " data-aos="zoom-in">
                 <h1 class="fs-2 text-center text-md-start ">Welcom <span class="text-primary">My Profile .</span></h1>
-                <p class="text-content  text-left  text-md-start ">Name : Kiattisa Jampradang Age : 25 year.<br>
-                    Blood : O Religion : Buddhism Ethnicity : Thai. <br>Nationality : Thai Birth Day : 28 April 1998.
-                    <br>Education : Nakhon Sawan Rajabhat University.
-                </p>
+                <p class="text-content  text-left  text-md-start ">Name : Kiattisa Jampradang ,Age : 25 year</p>
+                <p class="text-content  text-left  text-md-start ">Birth day : 28 April 1998. </p>
+                <p class="text-content  text-left  text-md-start ">Tel : 062-309-3374</p>
+                <p class="text-content  text-left  text-md-start ">Blood : O ,Religion : Buddhism ,Ethnicity : Thai.</p>
+                <p class="text-content  text-left  text-md-start ">Nationality : Thai Birth Day : 28 April 1998.</p>
+                <p class="text-content  text-left  text-md-start ">Education : Nakhon Sawan Rajabhat University.</p>
+                <p class="text-content  text-left  text-md-start ">E-mail : kiattisakjampradang@gmail.com.</p>
             </div>
         </div>
-        <div class=" mt-lg-3" id="Skill">
-            <div class="col-12  mt-2 ">
-                <h1 class="fs-3 text-center text-md-start ">My<span class="text-primary">Skill.</span></h1>
-                <div class="d-flex justify-content-between mb-md-3">
-                    <i class="fa-brands fa-html5 fs-2 ml-2" style="color :#FF6600 ;"></i>
-                    <i class="fa-brands fa-css3-alt fs-2" style="color :#3333FF ;"></i>
-                    <i class="fa-brands fa-php fs-2" style="color : #8470FF ;"></i>
-                    <i class="fa-brands fa-java fs-2" style="color : #f01212 ;"></i>
-                    <i class="fa-brands fa-bootstrap fs-2" style="color : #7B68EE;"></i>
-                    <img src="image/photoshop.png" class="img-fluid icon-image ">
-                    <img src="image/illustrator.png" class="img-fluid icon-image ">
+    </div>
+    <div class="container-fluid shadow-sm p-3 mb-5 bg-white rounded">
+        <div class="p-3">
+            <div class=" mt-lg-3" id="Education" data-aos="zoom-in-up">
+                <div class="col-12  mt-2 ">
+                    <h1 class="fs-2 text-center text-md-center ">My <span class="text-primary">Skill.</span></h1>
+                    <div class="d-flex justify-content-between p-5 mb-md-3">
+                        <i class="fa-brands fa-html5 fs-2 ml-2" style="color :#FF6600 ;"></i>
+                        <i class="fa-brands fa-css3-alt fs-2" style="color :#3333FF ;"></i>
+                        <i class="fa-solid fa-database fs-2 ml-2" style="color: #FFCCFF;"></i>
+                        <i class="fa-brands fa-php fs-2" style="color : #8470FF ;"></i>
+                        <i class="fa-brands fa-java fs-2" style="color : #f01212 ;"></i>
+                        <i class="fa-brands fa-bootstrap fs-2" style="color : #7B68EE;"></i>
+                        <img src="image/photoshop.png" class="img-fluid icon-image ">
+                        <img src="image/illustrator.png" class="img-fluid icon-image ">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="mt-lg-3">
+    </div>
+    <div class="container-fluid shadow-sm p-3 mb-5 bg-white rounded">
+        <div class="p-3">
+            <div class=" mt-lg-3" id="Skill">
+                <div class="col-12  mt-2 ">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="p-1 mt-lg-2" data-aos="fade-right">
+                                <img src="image/nongkhayangwittaya.png" class="rounded float-left w-100 mw-100 "
+                                    alt="...">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h1 class="fs-2 text-center text-md-start ">My <span class="text-primary">Education.</span>
+                            </h1>
+                            <div class="p-1 mt-lg-2" data-aos="zoom-in">
+                                <p class="text-text-center text-md-start fs-4 px-md-4 ">Nongkhayangwittaya (2014 - 2016)
+                                </p>
+                                <p class="text-center text-md-start px-0 px-md-4 ">GPAX : 2.51.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            </h1>
+                            <div class="p-1 mt-lg-2" data-aos="zoom-in">
+                                <p class="text-text-center text-md-start fs-4 px-md-4 ">Nakhon Sawan Rajabhat University
+                                    (2017 - 2020)</p>
+                                <p class="text-center text-md-start px-0 px-md-4 ">GPAX : 2.73.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6" data-aos="fade-right">
+                            <div class="p-1 mt-lg-2">
+                                <img src="image/bhHS62MZdMaX1WaOgf9GqxiwtlCHXiD6TzVCWFU1.jpg"
+                                    class="rounded float-left w-100 mw-100 " alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid shadow-sm p-3 mb-5 bg-white rounded">
+        <div class="col-12">
             <div class="row">
-                <div class="col-12 col-md-5 col-lg-5 order-md-2">
-                    <h1 class="fs-3 text-center text-md-start " id="Certificate">Certificate</h1>
-                    <div class="col-12 col-md-auto col-lg-auto aos-init" data-aos="fade-left">
-                        <img src="image/Certificate HSP.jpg" class="img-fluid  w-100" alt="">
+                <div class="col-12 col-md-6" data-aos="fade-right">
+                    <div class="p-1 mt-md-3">
+                        <img src="image/JIB.png" class="rounded float-left w-100 mw-100 " alt="...">
                     </div>
                 </div>
-                <div class="col-12 col-md-7 col-lg-7 order-md-1">
-                    <h1 class="fs-3 text-center text-md-start " id="Contact">Contact</h1>
-                    <div class="d-block text-center text-md-start">
-                        <i class="fa-brands fa-facebook text-primary fs-2"></i><span class="fs-5 socai-text ">Kiattisak Jampradang</span>
-                        <i class="fa-brands fa-line fs-2 text-success"></i><span class="fs-5 socai-text ">ID: 0623093374</span><br>
-                        <i class="fa-solid fa-phone fs-2 text-success"></i><span class="fs-5 socai-text ">0623093374</span><br>
-                        
+                <div class="col-12 col-md-6" data-aos="zoom-in-up">
+                    <h1 class="fs-2 text-center text-md-start ">My <span class="text-primary">Experience.</span></h1>
+                    <p class="text-text-center text-md-start fs-4 px-md-4 ">JIB Computer Group(Chainat) (2022 - 2024)
+                    </p>
+                    <p class="text-center text-md-start px-0 px-md-4">Job position: technician.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid shadow-sm p-3 mb-5 bg-white rounded">
+        <div class="col-12">
+            <h1 class="fs-2 text-center  ">My <span class="text-primary">Certificate.</span></h1>
+            <div class="row p-1 ">
+                <div class="col-12 col-md-3" data-aos="fade-right">
+
+                    <img src="image/383897980_278653758385504_662130891159140938_n.jpg"
+                        class="rounded  float-left img-fluid w-100 mw-100 " alt="...">
+                    <p class="text-text-center text-md-start fs-5 px-md-4 ">Lite :Fundamental Web Dev with HTML5 & CSS3
+                    </p>
+                </div>
+                <div class="col-12 col-md-3" data-aos="fade-right">
+                    <img src="image/377478396_1045488133117634_1628440328751465404_n.png"
+                        class="rounded  float-left  img-fluid w-100 mw-100  " alt="..." style="width:auto!important">
+                    <p class="text-text-center text-md-start fs-5 px-md-4 ">Web Application development ระดับเบื้องต้น
+                        โครงการ Hacka Thailand. </p>
+
+                </div>
+                <div class="col-12 col-md-3" data-aos="fade-right">
+                    <img src="image/AUCC2022.png" class="rounded  float-left  img-fluid w-100 mw-100  " alt="..."
+                        style="width:auto!important">
+                    <p class="text-text-center text-md-start fs-5 px-md-4 ">
+                        การประชุมวิชาการระดับปริญญาตรีด้านคอมพิวเตอร์ภูมิภาคเอเชีย ครังที่ 10 (AUC2). </p>
+                </div>
+                <div class="col-12 col-md-3" data-aos="fade-right">
+                    <img src="image/Certificate HSP.png" class="rounded  float-left  img-fluid w-100 mw-100 border "
+                        alt="..." style="width:auto!important">
+                    <p class="text-text-center text-md-start fs-5 px-md-4 ">อบรม Human Subject Protection Course. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <h1 class="fs-2 text-center  ">My <span class="text-primary">Performance.</span></h1>
+        <div class=" row" data-aos="fade-right">
+            <div class="col-md-4" >
+                <img src="image/1686720195503.jpeg" class="rounded  float-left  img-fluid w-100 h-85 mw-100 border "
+                alt="..." style="width:auto!important" data-aos="fade-right">
+            </div>
+            <div class="col-md-8">
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <img src="image/1684850072804.jpeg" class="rounded  float-left  img-fluid w-100 h-100 mw-100 border "
+                        alt="..." style="width:auto!important" data-aos="fade-right">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="image/1684850077907.jpeg" class="rounded  float-left  img-fluid w-100 h-100 mw-100  border "
+                        alt="..." style="width:auto!important" data-aos="fade-right">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="image/received_1751089245243770.webp" class="rounded  float-left  img-fluid w-100 mw-100 border "
+                        alt="..." style="width:auto!important" data-aos="fade-right">
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <img src="image/1686720195312.jpeg" class="rounded  float-left  img-fluid w-100 mw-100 border "
+                        alt="..." style="width:auto!important" data-aos="fade-right">
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <img src="image/1686720195746.jpeg" class="rounded  float-left  img-fluid w-100 mw-100 border "
+                        alt="..." style="width:auto!important" data-aos="fade-right">
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <img src="image/1687500482451.jpeg" class="rounded  float-left  img-fluid w-100 mw-100 border "
+                        alt="..." style="width:auto!important" data-aos="fade-right">
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <img src="image/1686720195651.jpeg" class="rounded  float-left  img-fluid w-100 h-100 mw-100 border "
+                        alt="..." style="width:auto!important" data-aos="fade-right">
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-    </div>
-    </div>
 </body>
 <script>
     AOS.init();
